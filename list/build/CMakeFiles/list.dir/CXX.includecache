@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/root/project/algorithm/list/src/main.cc
+iostream
+-
+vector
+-
+sstream
+-
+algorithm
+-
+../../utils/print.hpp
+/root/project/algorithm/utils/print.hpp
+
+/root/project/algorithm/utils/print.hpp
+iostream
+-
+sstream
+-
+string
+-
+vector
+-
+

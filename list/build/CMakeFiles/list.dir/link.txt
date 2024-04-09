@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/list.dir/src/main.cc.o  -o list 

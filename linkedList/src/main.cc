@@ -51,6 +51,14 @@ ListNode *access(ListNode *head, int index){
   return head;
 }
 
+/** 
+ * 查找链表的数据
+ * 
+ * @param head  
+ * @param target
+ * 
+ * @return 
+ */
 int find(ListNode *head, int target){
   int index = 0;
   while (head != nullptr){
@@ -61,6 +69,7 @@ int find(ListNode *head, int target){
   }
   return index;
 }
+
 int main(){
   ListNode *n0 = new ListNode(1);
   ListNode *n1 = new ListNode(2);
@@ -73,6 +82,6 @@ int main(){
   n1->next = n2;
   n2->next = n3;
   n3->next = n4;
-  insert(n1, n3);
+
   return 0;
 }
