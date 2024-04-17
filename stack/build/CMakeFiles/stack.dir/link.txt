@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/stack.dir/src/array_stack.cc.o  -o stack 
