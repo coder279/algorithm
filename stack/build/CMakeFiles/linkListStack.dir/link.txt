@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/linkListStack.dir/src/linkedlist_stack.cc.o  -o linkListStack 

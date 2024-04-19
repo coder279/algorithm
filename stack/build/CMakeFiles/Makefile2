@@ -73,6 +73,8 @@ CMAKE_BINARY_DIR = /root/project/algorithm/stack/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/arrayQueue.dir/all
+all: CMakeFiles/linkListStack.dir/all
 all: CMakeFiles/stack.dir/all
 
 .PHONY : all
@@ -83,9 +85,65 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/arrayQueue.dir/clean
+clean: CMakeFiles/linkListStack.dir/clean
 clean: CMakeFiles/stack.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/arrayQueue.dir
+
+# All Build rule for target.
+CMakeFiles/arrayQueue.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrayQueue.dir/build.make CMakeFiles/arrayQueue.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrayQueue.dir/build.make CMakeFiles/arrayQueue.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/project/algorithm/stack/build/CMakeFiles --progress-num=1,2 "Built target arrayQueue"
+.PHONY : CMakeFiles/arrayQueue.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/arrayQueue.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/project/algorithm/stack/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/arrayQueue.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/project/algorithm/stack/build/CMakeFiles 0
+.PHONY : CMakeFiles/arrayQueue.dir/rule
+
+# Convenience name for target.
+arrayQueue: CMakeFiles/arrayQueue.dir/rule
+
+.PHONY : arrayQueue
+
+# clean rule for target.
+CMakeFiles/arrayQueue.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrayQueue.dir/build.make CMakeFiles/arrayQueue.dir/clean
+.PHONY : CMakeFiles/arrayQueue.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/linkListStack.dir
+
+# All Build rule for target.
+CMakeFiles/linkListStack.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkListStack.dir/build.make CMakeFiles/linkListStack.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkListStack.dir/build.make CMakeFiles/linkListStack.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/project/algorithm/stack/build/CMakeFiles --progress-num=3,4 "Built target linkListStack"
+.PHONY : CMakeFiles/linkListStack.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/linkListStack.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/project/algorithm/stack/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/linkListStack.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/project/algorithm/stack/build/CMakeFiles 0
+.PHONY : CMakeFiles/linkListStack.dir/rule
+
+# Convenience name for target.
+linkListStack: CMakeFiles/linkListStack.dir/rule
+
+.PHONY : linkListStack
+
+# clean rule for target.
+CMakeFiles/linkListStack.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkListStack.dir/build.make CMakeFiles/linkListStack.dir/clean
+.PHONY : CMakeFiles/linkListStack.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/stack.dir
@@ -94,7 +152,7 @@ clean: CMakeFiles/stack.dir/clean
 CMakeFiles/stack.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack.dir/build.make CMakeFiles/stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack.dir/build.make CMakeFiles/stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/project/algorithm/stack/build/CMakeFiles --progress-num=1,2 "Built target stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/project/algorithm/stack/build/CMakeFiles --progress-num=5,6 "Built target stack"
 .PHONY : CMakeFiles/stack.dir/all
 
 # Build rule for subdir invocation for target.

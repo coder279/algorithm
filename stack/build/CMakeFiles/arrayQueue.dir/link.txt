@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/arrayQueue.dir/src/array_queue.cc.o  -o arrayQueue 

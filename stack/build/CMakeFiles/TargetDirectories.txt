@@ -1,3 +1,5 @@
 /root/project/algorithm/stack/build/CMakeFiles/rebuild_cache.dir
 /root/project/algorithm/stack/build/CMakeFiles/edit_cache.dir
+/root/project/algorithm/stack/build/CMakeFiles/arrayQueue.dir
+/root/project/algorithm/stack/build/CMakeFiles/linkListStack.dir
 /root/project/algorithm/stack/build/CMakeFiles/stack.dir

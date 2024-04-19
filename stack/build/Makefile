@@ -131,6 +131,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named arrayQueue
+
+# Build rule for target.
+arrayQueue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 arrayQueue
+.PHONY : arrayQueue
+
+# fast build rule for target.
+arrayQueue/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrayQueue.dir/build.make CMakeFiles/arrayQueue.dir/build
+.PHONY : arrayQueue/fast
+
+#=============================================================================
+# Target rules for targets named linkListStack
+
+# Build rule for target.
+linkListStack: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 linkListStack
+.PHONY : linkListStack
+
+# fast build rule for target.
+linkListStack/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkListStack.dir/build.make CMakeFiles/linkListStack.dir/build
+.PHONY : linkListStack/fast
+
+#=============================================================================
 # Target rules for targets named stack
 
 # Build rule for target.
@@ -142,6 +168,33 @@ stack: cmake_check_build_system
 stack/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack.dir/build.make CMakeFiles/stack.dir/build
 .PHONY : stack/fast
+
+src/array_queue.o: src/array_queue.cc.o
+
+.PHONY : src/array_queue.o
+
+# target to build an object file
+src/array_queue.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrayQueue.dir/build.make CMakeFiles/arrayQueue.dir/src/array_queue.cc.o
+.PHONY : src/array_queue.cc.o
+
+src/array_queue.i: src/array_queue.cc.i
+
+.PHONY : src/array_queue.i
+
+# target to preprocess a source file
+src/array_queue.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrayQueue.dir/build.make CMakeFiles/arrayQueue.dir/src/array_queue.cc.i
+.PHONY : src/array_queue.cc.i
+
+src/array_queue.s: src/array_queue.cc.s
+
+.PHONY : src/array_queue.s
+
+# target to generate assembly for a file
+src/array_queue.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/arrayQueue.dir/build.make CMakeFiles/arrayQueue.dir/src/array_queue.cc.s
+.PHONY : src/array_queue.cc.s
 
 src/array_stack.o: src/array_stack.cc.o
 
@@ -170,6 +223,33 @@ src/array_stack.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/stack.dir/build.make CMakeFiles/stack.dir/src/array_stack.cc.s
 .PHONY : src/array_stack.cc.s
 
+src/linkedlist_stack.o: src/linkedlist_stack.cc.o
+
+.PHONY : src/linkedlist_stack.o
+
+# target to build an object file
+src/linkedlist_stack.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkListStack.dir/build.make CMakeFiles/linkListStack.dir/src/linkedlist_stack.cc.o
+.PHONY : src/linkedlist_stack.cc.o
+
+src/linkedlist_stack.i: src/linkedlist_stack.cc.i
+
+.PHONY : src/linkedlist_stack.i
+
+# target to preprocess a source file
+src/linkedlist_stack.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkListStack.dir/build.make CMakeFiles/linkListStack.dir/src/linkedlist_stack.cc.i
+.PHONY : src/linkedlist_stack.cc.i
+
+src/linkedlist_stack.s: src/linkedlist_stack.cc.s
+
+.PHONY : src/linkedlist_stack.s
+
+# target to generate assembly for a file
+src/linkedlist_stack.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/linkListStack.dir/build.make CMakeFiles/linkListStack.dir/src/linkedlist_stack.cc.s
+.PHONY : src/linkedlist_stack.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -178,10 +258,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... arrayQueue"
+	@echo "... linkListStack"
 	@echo "... stack"
+	@echo "... src/array_queue.o"
+	@echo "... src/array_queue.i"
+	@echo "... src/array_queue.s"
 	@echo "... src/array_stack.o"
 	@echo "... src/array_stack.i"
 	@echo "... src/array_stack.s"
+	@echo "... src/linkedlist_stack.o"
+	@echo "... src/linkedlist_stack.i"
+	@echo "... src/linkedlist_stack.s"
 .PHONY : help
 
 
